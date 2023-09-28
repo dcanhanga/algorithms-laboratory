@@ -5,9 +5,10 @@ const $info = document.querySelector('#info');
 let listShopping = [];
 
 const renderItemList = (itemList) => {
-    itemList.forEach((item) => {
+    itemList.forEach((item,index) => {
         const li = document.createElement('li');
-        li.innerText = item;
+        const span = (index + 1).toString().padStart(2, '0');
+        li.innerHTML = `<span>${span}</span>${item}`;
         $listShopping.appendChild(li);
     });
 };

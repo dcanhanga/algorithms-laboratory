@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="./index.js"></script>
+    <title>Guessing game</title>
+</head>
+<body>
+    <div class="container">
+        <main >
+            <div class="screen-1" id="screen-1">
+                <h1 class="title">Guessing game</h1>
+                <p id="label">Adivinhe um número entre 0 e 10</p>
+                <form id="guessing-form">
+                    <label for="number-guessing" class="sr-only">Digite um numero</label>
+                    <input type="number" id="number-guessing" step="1" min="0" max="10" required>
+                    <button type="submit" id="try-guessing">Tentar</button>
+                </form>
+            </div>
+
+            <div class="screen-2 hide" id="screen-2">
+                <p class="title-2" id="result"></p>
+                <button class="btnReset" id='btnReset'>Jogar novamente</button>
+            </div>
+           
+        </main>
+    </div>
+</body>
+</html>
