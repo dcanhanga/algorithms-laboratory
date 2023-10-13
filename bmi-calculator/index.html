@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link rel="stylesheet" href="./index.css" >
     <title>BMI Calculator</title>
-    <script defer src="./js/index.js"></script>
+    <script type="module" src="./js/index.js" defer ></script>
   </head>
 
   <body>
     <div class="container">
       <main class="card">
-        <form>
+        <form data-form="form">
           <h1 class="title">Cálculo de IMC</h1>
           <div class="input-wrapper">
             <label for="weight">Peso (kg)</label>
@@ -19,6 +19,7 @@
                 type="text"
                 id="weight" 
                 placeholder="60"
+                data-form="input-weight"
             >
           </div>
 
@@ -28,16 +29,17 @@
                 type="text" 
                 id="hieght" 
                 placeholder="1.65"
+                data-form="input-height"
             >
           </div>
           <button type="submit">Calcular IMC <img src="./assets/img/arrow.svg" alt="seta para apontando para a  direita"></button>
         </form>
       </main>
     </div>
-    <div class="modal-wrapper">
+    <div data-modal="modal-wrapper" class="modal-wrapper">
         <div class="modal card ">
-            <h2 class="title">Seu IMC é de 28</h2>
-            <button class="close" aria-label="Fechar Modal"><img src="./assets/img/close.svg" alt="simbolo x"></button>
+            <h2 class="title"><span data-modal="message"></span></h2>
+            <button class="close" aria-label="Fechar Modal" data-modal="close" id="close"><img src="./assets/img/close.svg" alt="simbolo x"></button>
         </div>
     </div>
     <div class="error-alert">Digite Somente Número</div>
