@@ -1,0 +1,14 @@
+.timer  {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+  margin-bottom:  1rem;
+}

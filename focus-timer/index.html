@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Temporizador estilo pomodoro" />
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <title>FocusTimer</title>
+    <script type="module" src="./assets/js/index.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <div class="timer" data-timer="timer">
+        <span data-timer="minutes">25</span>
+        <span>:</span>
+        <span class="seconds" data-timer="seconds">00</span>
+      </div>
+      <div class="controls">
+        <button class="play" data-controls="play">
+          <img src="./assets/imgs/play.svg" alt="" />
+        </button>
+        <button class="hidden" data-controls="pause">
+          <img src="./assets/imgs/pause.svg" alt="" />
+        </button>
+        <button class="hidden" data-controls="stop">
+          <img src="./assets/imgs/stop.svg" alt="" />
+        </button>
+        <button data-controls="set"><img src="./assets/imgs/time.svg" alt="" /></button>
+      </div>
+    </main>
+    <footer class="footer">
+      <button class="sound-on" data-sounds="soundOn">
+        <img src="./assets/imgs/soundOn.svg" alt="" />
+      </button>
+      <button class="sound-off hidden" data-sounds="soundOff">
+        <img src="./assets/imgs/sounOff.svg" alt="" srcset="" />
+      </button>
+    </footer>
+  </body>
+</html>
